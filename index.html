@@ -2,11 +2,21 @@
 
 <html>
     <head>
-        <title>Задание 1 - Савинцев Вадим</title>
-        <link href="style.css" rel="stylesheet" />
+        <title>Задание 2 - Савинцев Вадим</title>
     </head>
+    <header class="header">
+        <link href="style.css" rel="stylesheet" />
+        <div id="Текст" class="nav1">
+        <img src="kazuhiro-oya-loc05.jpg" alt="Логотип" id="Логотип"/> Логово цефарирона
+        </div>
+    </header>
+
+    <nav class="nav1">
+    <ul>Меню: <a href="#Список"> Список </a><a href="#Таблица"> Таблица </a><a href="#Форма"> Форма </a></ul>
+    </nav>
     <body>
-        <h1>Ссылки</h1>
+        <div class="nav1">
+        <h1 class="nav"><a name="Список">Cписок</a></h1>
         <ol>
             <li><a href="http://example.com"> Абсолютная гиперссылка на главную страницу сайта example.com</a></li>
             <li><a href="https://example.com"> Абсолютная на главную страницу сайта example.com в протоколе https</a></li>
@@ -40,8 +50,39 @@
             <li><a href="/">Сокращенная на главную</a></li>
             <li><a href="/index.html">Сокращенная ссылка на внутреннюю</a></li>
         </ol>
-        <h1> <a name="Форма"></a> Форма</h1>
-        <form action="/" method="post">
+        </div>
+        <h2 class="nav1"> <a name="Таблица">Таблица</a></h2>
+        <table class="table">
+            <tr>
+                <th>Колонка 1</th>
+                <th>Колонка 2</th>
+                <th>Колонка 3</th>
+            </tr>
+            <tr id="color1">
+                <td colspan="3">Ячейка 1, объеденённая 3-ёх колонок</td>
+            </tr>
+                <tr id="color2">
+                <td>Ячейка 21</td>
+                <td>Ячейка 22</td>
+                <td>Ячейка 23</td>
+            </tr>
+            <tr id="color1">
+                <td>Ячейка 31</td>
+                <td>Ячейка 32</td>
+                <td>Ячейка 33</td>
+            </tr>
+            <tr id="color2">
+                <td colspan="3">Ячейка 4, объеденённая 3-ёх колонок</td>>
+            </tr>
+            <tr id="color1">
+                <td>Ячейка 51</td>
+                <td>Ячейка 52</td>
+                <td>Ячейка 53</td>
+            </tr>
+        </table>
+        <div class="nav1">
+        <h3> <a name="Форма">Форма</a></h3>
+        <form action="/" method="post" class="nav">
             <label>
                 Ваше имя:<br/>
                 <input name="field-name-1"
@@ -112,5 +153,7 @@
             </label><br/>
             <input type="submit" value="Отправить" />
         </form>
+    </div>
     </body>
+    <footer class="footer"> (c) Савинцев Вадим 2022</footer>
 </html>
